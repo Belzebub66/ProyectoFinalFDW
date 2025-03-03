@@ -195,7 +195,9 @@ section{
      /* Move the card up by 10px */
     transform: translatey(-30px);
     box-shadow: 0 8px 16px rgba(207, 6, 6, 0.642);
-    transition: transform 200ms, box-shadow 200ms;
+    background-color: #fca2119a;
+    transition: transform 200ms, box-shadow 200ms, background-color 200ms;
+
 }
 
 .big-blog-card{
