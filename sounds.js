@@ -1,12 +1,12 @@
+// script.js
 document.addEventListener('DOMContentLoaded', function() {
-    const contenedor = document.querySelector('.blog-card');
+    const contenedores = document.querySelectorAll('.blog-card');
     const sonido = document.getElementById('card-sound');
 
-    contenedor.addEventListener('mouseenter', function() {
-        sonido.play();
-    });
-    contenedor.addEventListener('mouseleave', function() {
-        sonido.pause();
-        sonido.currentTime = 0; // Reinicia el sonido para la próxima vez
+    contenedores.forEach(contenedor => {
+        contenedor.addEventListener('mouseenter', function() {
+            sonido.currentTime = 0; // Reinicia el sonido para que se reproduzca desde el inicio
+            sonido.play();
+        });
     });
 });
